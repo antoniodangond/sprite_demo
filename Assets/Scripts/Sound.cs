@@ -31,7 +31,7 @@ public class Sound
         source.pitch = pitch;
         source.Play();
     }
-
+    
     public void Pause()
     {
         source.Pause();

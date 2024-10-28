@@ -7,4 +7,5 @@ static class AudioClipNames
     public const string Footstep4 = "footstep_4";
     public const string Footstep5 = "footstep_5";
     public const string Background = "background";
+    public const string UI_Select = "ui_select";
 }
