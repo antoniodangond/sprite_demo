@@ -8,6 +8,7 @@ public class PauseController : MonoBehaviour
     public GameObject pauseMenuUI;
 
     private AudioManager audioManager;
+    private string UI_Select_Sound = AudioClipNames.UI_Select;
 
     void Awake()
     {
@@ -59,6 +60,8 @@ public class PauseController : MonoBehaviour
 
     public void SetSelectedButton(GameObject button)
     {
+        audioManager.PlaySound(UI_Select_Sound, 1.0f);
+        // Debug.Log("Trying to play UI sound");
         EventSystem.current.SetSelectedGameObject(button);
     }
 }
